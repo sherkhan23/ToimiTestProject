@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <script>
+        import * as mdb from 'mdb-ui-kit'; // lib
+        import { Input } from 'mdb-ui-kit'; // module
+    </script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>ToimiTest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <p id="logo" class="ml-5">LOGO</p>
+    </a>
+
+    <ul id="nav-center" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-dar active">Проекты</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">О компании</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Контакты</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <ul id="nav-end" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">RU</a></li>
+            <li><a href="#" class="nav-link px-2 link-secondary">EN</a></li>
+            <li><a href="#" class="nav-link px-2 link-primary">НАЧАТЬ ПРОЕКТ <i class="bi bi-arrow-right"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container-fluid pb-5">
+    <div class="row pb-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="body-story" style="display: inline-block"> <span class="text-secondary">Главная - </span><span>Контакты</span> </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <!--    second part  -->
+            <div class="row mt-5">
+                <div class="col-md-10">
+                    <p id="body1"> Мы рядом </p>
+                    <p id="body-text-2">Заполните форму ниже и мы свяжемся с вами. Не любите <br> формы? Напишите нам на почту
+                        <a href="#">info@site.com</a></p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-10">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Ваше e-mail">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Коментарий"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <div class="body-story" style="display: inline-block"> <span>Согласен с </span><span class="text-primary">Согласен с Политикой конфиденциальности</span> </div>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <div id="send-circle">
+                <div class="circle-outside mt-3">
+                    <div style="display: flex;justify-content: center;flex-direction: column;" class="circle-inside">
+                         <form id="form-circle">
+                             <button id="button" style="border: none; background-color: #FFFFFF" type="submit">
+                                 <img id="airplane"  src="media/Vector.png">
+                                 <p class="pt-4" id="circle-p">Отправить</p>
+                             </button>
+                         </form>
+                        <script>
+                            $(document).ready(function() {
+                                $("#button").hover(function () {
+                                    $("#airplane").animate({top: "-50"}, "slow", function () {
+                                        $("#circle-p").animate({top: "-50"}, "slow", function () {
+                                        });
+                                    });
+                                });
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+
+
+</div>
+<!-- Footer -->
+<footer id="footer" class="text-center text-lg-start">
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 text-start">
+                    <p id="logo-footer">LOGO</p>
+            </div>
+            <div class="col-md-2 text-start">
+                <span class="footer-head">Услуги   <span class="dot"></span></span>
+                <p class="footer-p mt-4">Support and development</p>
+                <p class="footer-p">UI/UX and product design</p>
+                <p class="footer-p">Progressive Web Applications (PWA)</p>
+            </div>
+            <div class="col-md-2 text-start">
+                <span class="footer-head">Компания   <span class="dot"></span></span>
+                <p class="footer-p mt-4">О компании</p>
+                <p class="footer-p">Проекты</p>
+                <p class="footer-p">Контакты</p>
+            </div>
+            <div class="col-md-2 text-start">
+                <span class="footer-head">Контакты   <span class="dot"></span></span>
+                <p class="footer-p mt-4">Скачать презентацию <img class="ml-2" src="media/foot-icon.svg"></p>
+                <p class="footer-p">+7 (499) 999-99-99</p>
+                <p class="footer-p">info@site.com</p>
+            </div>
+            <div class="col-md-2 text-start" style="display: flex;justify-content: center;flex-direction: column;">
+               <IMG style="width: 34px;height: 34px;" src="media/Group%201960.svg">
+                <IMG  style="width: 34px;height: 34px;" class="mt-3" src="media/Group%201961.svg">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5 pb-3">
+        <div class="row">
+            <div  class="footer-p col-md-6 d-flex justify-content-center">© Company 2022. All rights reserved.</div>
+            <div class="footer-p col-md-6 d-flex justify-content-center">Политика конфиденциальночти</div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+</body>
+</html>
+
